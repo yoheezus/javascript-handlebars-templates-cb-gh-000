@@ -1,4 +1,4 @@
-Handlebars.registerHelper("comment_body", () => {
+Handlebars.registerHelper("comment_body", function() {
     if (this.state === "closed") {
         return new Handlebars.SafeString(this.body)
     } else {
